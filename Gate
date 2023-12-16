@@ -1,0 +1,26 @@
+spisok = ["Kamaz", "Man"]
+o = "Open"
+c = "Close"
+
+while True:
+    do = input("Действие: ")
+    if do == "Открыть":
+        num = input("Номер: ")
+        for i in spisok:        
+            if i == num:
+                print(o)
+            else:
+                pass
+    elif do == "Добавить":
+        spisok.append(input("Номер: "))
+    elif do == "Закрыть":
+        print(c)
+    elif do == "Удалить":
+        nom = input("Номер: ")
+        for j in spisok:
+            if j == nom:
+                spisok.remove(nom)
+            else:
+                pass
+    else:
+        print("Команды не существует")
